@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const bodyParser = require('body-parser');
 
 // Inizializza l'SDK Admin con le credenziali del tuo progetto Firebase
-var serviceAccount = require('firabseKeys.json');
+var serviceAccount = require('./firebaseKeys.json');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
